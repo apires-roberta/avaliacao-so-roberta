@@ -1,4 +1,5 @@
 # Roberta Pires - 02211057
+#Avaliação SO
 import mysql.connector
 
 
