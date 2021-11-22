@@ -1,5 +1,6 @@
 # Roberta Pires - 02211057
-from conexaoBanco import *
+# Avaliação SO
+from mysql-python.py import *
 nObs = 0
 i = 0
 
