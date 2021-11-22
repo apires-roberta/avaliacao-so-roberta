@@ -1,6 +1,6 @@
 # Roberta Pires - 02211057
 # Avaliação SO
-from mysqlpython.py import *
+from mysqlpython import *
 nObs = 0
 i = 0
 
