@@ -3,7 +3,7 @@
 import mysql.connector
 
 
-def insert_db(value1, value2):
+def insert_db(value1, value2, value3):
     try:
         mydb = mysql.connector.connect(
             host="localhost",
@@ -18,8 +18,8 @@ def insert_db(value1, value2):
 
             mycursor = mydb.cursor()
 
-            sql_query = "INSERT INTO prefArt(nomeUser,cpfUser) VALUES (%s,%s)"
-            val = [value1, value2]
+            sql_query = "INSERT INTO prefArt(nomeUser,cpfUser, opcao_selec) VALUES (%s,%s,%s)"
+            val = [value1, value2, value3]
             mycursor.execute(sql_query, val)
 
             mydb.commit()
